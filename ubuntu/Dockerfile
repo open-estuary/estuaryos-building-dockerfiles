@@ -16,3 +16,5 @@ COPY estuaryftp_ubuntu.list /etc/apt/sources.list.d/estuary.list
 COPY ESTUARY-GPG-KEY /tmp/ESTUARY-GPG-KEY
 RUN cat /tmp/ESTUARY-GPG-KEY | apt-key add -
 RUN apt-get update
+RUN apt-get install -y gnupg1
+COPY ubuntu-archive-keyring.gpg /home/
