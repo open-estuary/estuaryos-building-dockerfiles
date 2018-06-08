@@ -4,7 +4,7 @@
 distro_name="ubuntu"
 
 #Define a tag name for your docker image
-tag_name="3.1-full"
+tag_name="5.1-full"
 
 #Use your own docker depository to push image
 repo_name="estuary"
