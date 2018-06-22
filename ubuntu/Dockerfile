@@ -18,3 +18,4 @@ RUN cat /tmp/ESTUARY-GPG-KEY | apt-key add -
 RUN apt-get update
 RUN apt-get install -y gnupg1 squashfs-tools
 COPY ubuntu-archive-keyring.gpg /home/
+RUN apt-get build-dep -q -y linux
